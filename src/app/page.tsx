@@ -9,7 +9,6 @@ interface props {
 }
 
 const App = async ({ searchParams }: props) => {
-  console.log(searchParams.city);
   let weather = await fetchWeather(searchParams.city);
   
   return (

@@ -1,5 +1,5 @@
 
-const apiKey = "a72807b6c32dd7c3c9f84ebd4f3a00d5";
+const apiKey = process.env.API_KEY;
 
 type cityArgs = string | {lat:number; lon:number};
 export const fetchWeather = async (city: cityArgs) => {
